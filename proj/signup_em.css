@@ -1,0 +1,36 @@
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(245, 247, 247);
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow: hidden scroll;
+    text-rendering: optimizelegibility;
+    font-size: 17px !important;}
+
+html {
+        line-height: 1.15;
+        text-size-adjust: 100%;
+    }
+
+
+
+.fon{
+    color:rgb(0, 0, 0);
+    font-size:25px;
+    margin-top:60px;
+    margin-left:30px;
+}
+
+.but1{
+font-size: 15px;
+height:25px;
+width: 350px;
+color:rgb(255, 255, 255);
+padding:25px;
+background-image:-webkit-radial-gradient(rgb(88, 132, 151), rgb(12, 11, 65));
+text-align: center;}
+
+h1{
+color:#0e0000;
+}
