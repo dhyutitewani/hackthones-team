@@ -5,22 +5,22 @@ const app = express();
 const port = 3000
 app.listen(port);
 
-const eduSchoolRouter = require('./Routes/eduSchoolRoute.js');
+const eduSchoolRouter = require('./src/Routes/eduSchoolRoute.js');
 app.use('/school', eduSchoolRouter);
 
 // app.use('/corps', corpRouter);
 
-const eduCollegeRouter = require('./Routes/eduCollegeRoute.js');
+const eduCollegeRouter = require('./src/Routes/eduCollegeRoute.js');
 app.use('/college', eduCollegeRouter);
 
 
-const corpRouter = require('./Routes/corproute');
+const corpRouter = require('./src/Routes/corproute');
 app.use('/corps', corpRouter);
 
 
-const nonProfitRoute = require('./Routes/nonprofitRoute');
+const nonProfitRoute = require('./src/Routes/nonprofitRoute');
 app.use('/ngo', nonProfitRoute);
 
 
-const researchRouter = require('./Routes/researchRoute');
+const researchRouter = require('./src/Routes/researchRoute');
 app.use('/research', researchRouter);
