@@ -8,19 +8,27 @@ app.listen(port);
 
 const corpRouter = express.Router();
 
+
 corpRouter
-.route('/corporations')
-.get(getCorpSignupPage)
+.route('/demo')
+.get(getCorpSignupPage);
 
 
 corpRouter
-.route('/corporations/:id')
+.route('/:corpname')
 .get(getCorpDashboardPage);
 
 
+function getCorpSignupPage(req,res) {
+    res.sendFile('/home/shivamjain/Documents/Code/Hackthones-team/src/Public/Corp/CompanySignUp.html');
+}
 
 
 
+
+function getCorpDashboardPage(req,res) {
+    res.sendFile('/home/shivamjain/Documents/Code/Hackthones-team/src/Public/Corp/corpdashboard.html');
+}
 
 
 
