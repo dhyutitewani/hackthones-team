@@ -1,4 +1,5 @@
 
+const express = require('express');
 
 
 // SCHOOL ROUTES
@@ -29,34 +30,6 @@ function getSchoolDashboardPage(req,res) {
 
 
 
-
-
-
-// COLLEGES ROUTES
-
-
-const eduCollegeRouter = express.Router();
-
-
-
-eduCollegeRouter
-.route('/demo')
-.get(getCollegesignupPage);
-
-
-eduCollegeRouter
-.route('/:Collegename')
-.get(getCollegeDashboardPage);
-
-
-function getCollegesignupPage(req,res) {
-    res.sendFile('/home/shivamjain/Documents/Code/Hackthones-team/src/Public/Education/Colleges/clgDemoSignUp.html');
-}
-
-
-function getCollegeDashboardPage(req,res) {
-    res.sendFile('/home/shivamjain/Documents/Code/Hackthones-team/src/Public/Education/Colleges/clgDashboard.html');
-}
 
 
 

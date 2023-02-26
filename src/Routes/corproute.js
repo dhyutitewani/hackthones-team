@@ -1,10 +1,4 @@
 const express = require('express');
-const app = express();
-
-const port = 3000
-app.listen(port);
-
-
 
 const corpRouter = express.Router();
 
@@ -33,3 +27,4 @@ function getCorpDashboardPage(req,res) {
 
 
 
+module.exports = corpRouter;
